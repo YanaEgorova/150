@@ -1,0 +1,32 @@
+.hero__wrapper {
+   /* background-color: var(--first-brand-color); */
+   position: relative;
+}
+.hero {
+    padding: 25rem 0 10rem;
+    position: relative;
+    background-image: url('../img/img1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: rgba( 255, 255, 255, 0.4 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.hero .text-block {
+    position: relative;
+}
+
+@media screen and (min-width: 1024px)  {
+ 
+}
